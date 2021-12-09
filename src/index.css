@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap');
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 20px 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary: #8c54ff;
+  --secondary: #F3A847;
+  --tertiary: #B12704;
+  --light: #fafafa;
+  --light-gray: #a6a6a6;
+  --dark: #000000;
+  --darker: #111111;
+  --background: #282c34;
+  --header-background: #384b59;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
 }
+
+.profile {
+  border-radius: 50%;
+  width: 25vmin;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  color: var(--light);
+  font-family: 'Readex Pro', sans-serif;
+
+  background: url('./assets/background/triangles.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  font-size: calc(2rem + 2vw);
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: calc(1rem + 2vw);
+  font-weight: 700;
+  margin: 0;
+  color: black;
+}
+
+
+
+.flex-row {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 2vmin;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.header-flex-row {
+  background-color: var(--header-background);
+  
+  font-family: 'Readex Pro', sans-serif;
+  font-size: calc(.3rem + 2vmin);
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-top: 0.1rem;
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-five);
+  margin-bottom: var(--spacing-one);
+}
+
+.mx-3 {
+  color: black;
+  margin-top: 0.1rem;
+  margin-right: var(--spacing-five);
+  margin-left: var(--spacing-five);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border: #000000 solid .2em;
+  border-radius: 0.5em;
+  background-color: var(--light-gray);
+  text-decoration: initial;
+
+
+ 
+  height: 25vw;
+  display: grid;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+}
+
+ul {
+  margin-top: 0em;
+  padding-inline-start: 0;
+}
+
+li {
+  margin-top: 1em;
+  list-style: none;
+  display: grid;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+header a {
+  color: white;
+  text-decoration: initial;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.link-panel {
+  background-color: white;
+  width: fit-content;
+  opacity: 0.5;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 1vw;
+  padding: 1rem;
+  padding-top: 0;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.img-thumbnail {
+  margin: auto;
+  margin-bottom: 1rem;
+  width: auto;
+  height: 15vw;
+
+
+  cursor: pointer;
+}
+
+
