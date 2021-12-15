@@ -12,16 +12,18 @@ const LinkPanel = (props) => {
                 <ul className='flex-row'>
 
                     {categories.map((category) => (
-                        <li>
+                        <li key={category.title}>
                             <a href='/' className='mx-3' id={category.title}>
-                                {category.title}
+                                <h1>{category.title}</h1>
                                 <img
                                     src={require(`../../${category.graphicPath}`).default}
                                     className='img-thumbnail'
                                     alt={category.title}
+                                    
                                 />
+                                
                             </a>
-
+                            
                         </li>
                     ))}
                 </ul>

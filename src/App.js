@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import About from './components/About';
+import Profile from './components/Profile';
 import ProjectsPanel from './components/ProjectsPanel';
+import About from './components/About';
 
 function App() {
     const [pageState, setPageState] = useState('Home');
@@ -13,8 +14,9 @@ function App() {
             <main>
                 {pageState === 'Home' &&
                     <>
-                        <About></About>
+                        <Profile></Profile>
                         <ProjectsPanel></ProjectsPanel>
+                        <About></About>
                     </>
                 }
             </main>
