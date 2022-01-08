@@ -12,7 +12,7 @@ const Nav = () => {
                     <a href="/">Projects</a>
                 </li>
                 <li className='mx-2'>
-                    <a href="/">Photography</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </header>

@@ -1,7 +1,8 @@
 import React from 'react';
 import LinkPanel from '../LinkPanel';
 
-const ProjectsPanel = () => {
+const ProjectsPanel = (props) => {
+    const { setPageState } = props
     const projects = [
         {
             title: 'Multithreaded HTTP Server',
@@ -21,6 +22,7 @@ const ProjectsPanel = () => {
         <section>
             <LinkPanel
                 categories={projects}
+                setPageState={setPageState}
             ></LinkPanel>
         </section>
     );

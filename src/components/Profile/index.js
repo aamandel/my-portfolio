@@ -4,11 +4,12 @@ import profilePic from "../../assets/profile photo/profile1.jpg";
 const Profile = () => {
     return (
         <section>
-            <h2>
+            <div className='profile-row'>
                 <img src={profilePic} className="profile" alt="profilePic" />
-            </h2>
-            <div>
-                <h2 className='mx-1' id="about">Aaron Mandel</h2>
+                <div className='text-column'>
+                    <h2 className='mx-1' id="about">Aaron Mandel</h2>
+                    <p>Software Developer</p>
+                </div>
             </div>
         </section>
     );

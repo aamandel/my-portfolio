@@ -2,7 +2,8 @@ import React from 'react';
 
 const LinkPanel = (props) => {
     const {
-        categories = []
+        categories = [],
+        setPageState
     } = props;
 
     return (
@@ -13,17 +14,19 @@ const LinkPanel = (props) => {
 
                     {categories.map((category) => (
                         <li key={category.title}>
-                            <a href='/' className='mx-3' id={category.title}>
+                            <div className='mx-3' id={category.title}
+                                onClick={() => {
+                                    setPageState(category.title)
+                                }}>
                                 <h1>{category.title}</h1>
                                 <img
                                     src={require(`../../${category.graphicPath}`).default}
                                     className='img-thumbnail'
                                     alt={category.title}
-                                    
                                 />
-                                
-                            </a>
-                            
+
+                            </div>
+
                         </li>
                     ))}
                 </ul>

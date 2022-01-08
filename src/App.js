@@ -15,7 +15,7 @@ function App() {
                 {pageState === 'Home' &&
                     <>
                         <Profile></Profile>
-                        <ProjectsPanel></ProjectsPanel>
+                        <ProjectsPanel setPageState={setPageState}></ProjectsPanel>
                         <About></About>
                     </>
                 }
