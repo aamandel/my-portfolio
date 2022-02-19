@@ -13,8 +13,8 @@ const ProjectsPanel = (props) => {
             graphicPath: "assets/graphics/Pacman Graphic.png"
         },
         {
-            title: 'Perlin Noise Terrain Generator',
-            graphicPath: "assets/graphics/Perlin Terrain Graphic.png"
+            title: 'Rate My Surf',
+            graphicPath: "assets/graphics/Rate My Surf.png"
         }
     ];
 

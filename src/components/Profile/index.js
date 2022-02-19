@@ -7,7 +7,7 @@ const Profile = () => {
             <div className='profile-row'>
                 <img src={profilePic} className="profile" alt="profilePic" />
                 <div className='text-column'>
-                    <h2 className='mx-1' id="about">Aaron Mandel</h2>
+                    <h2 className='mx-1 home-name' id="about">Aaron Mandel</h2>
                     <p>Software Developer</p>
                 </div>
             </div>
