@@ -13,8 +13,9 @@ function App() {
 
     return (
         <Router>
+            <Nav></Nav>
             <div className="App">
-                <Nav></Nav>
+
                 <Switch>
                     <Route path='/Home'>
                         <Profile></Profile>

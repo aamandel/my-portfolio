@@ -19,9 +19,9 @@ main {
   --background: #282c34;
   --header-background: #384b59;
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
+  --spacing-one: calc(1vw * 0.5);
+  --spacing-two: calc(1vw);
+  --spacing-five: calc(2.5vw);
 }
 
 body {
@@ -156,7 +156,16 @@ section {
 }
 
 .header-flex-row {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  overflow: auto;
   background-color: var(--header-background);
+
+  top: 0px;
+  left: 0px;
   
   font-family: 'Quicksand', sans-serif;
   font-size: calc(.3rem + 2vmin);
@@ -167,8 +176,7 @@ section {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 0;
+  align-items: center;  
 }
 
 .mx-1 {
