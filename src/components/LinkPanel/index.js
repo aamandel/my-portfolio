@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LinkPanel = (props) => {
     const {
@@ -18,13 +19,14 @@ const LinkPanel = (props) => {
                                 onClick={() => {
                                     setPageState(category.title)
                                 }}>
-                                <h1>{category.title}</h1>
-                                <img
-                                    src={require(`../../${category.graphicPath}`).default}
-                                    className='img-thumbnail'
-                                    alt={category.title}
-                                />
-
+                                <Link to={'/Project/' + category.title}>
+                                    <h1>{category.title}</h1>
+                                    <img
+                                        src={process.env.PUBLIC_URL + category.graphicPath}
+                                        className='img-thumbnail'
+                                        alt={category.title}
+                                    />
+                                </Link>
                             </div>
 
                         </li>

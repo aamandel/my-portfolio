@@ -6,15 +6,15 @@ const ProjectsPanel = (props) => {
     const projects = [
         {
             title: 'Multithreaded HTTP Server',
-            graphicPath: "assets/graphics/HTTP Server Graphic.png"
+            graphicPath: "/assets/graphics/HTTP Server Graphic.png"
         },
         {
             title: 'Pacman AI Contest',
-            graphicPath: "assets/graphics/Pacman Graphic.png"
+            graphicPath: "/assets/graphics/Pacman Graphic.png",
         },
         {
             title: 'Rate My Surf',
-            graphicPath: "assets/graphics/Rate My Surf.png"
+            graphicPath: "/assets/graphics/Rate My Surf.png"
         }
     ];
 

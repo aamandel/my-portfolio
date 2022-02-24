@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Profile from './components/Profile';
 import ProjectsPanel from './components/ProjectsPanel';
 import About from './components/About';
 import ProjectPage from './components/ProjectPage';
 
+
 function App() {
     const [pageState, setPageState] = useState('Home');
 
     return (
-        <div className="App">
-            <Nav></Nav>
-            <main>
-                {pageState === 'Home' &&
-                    <>
+        <Router>
+            <div className="App">
+                <Nav></Nav>
+                <Switch>
+                    <Route path='/Home'>
                         <Profile></Profile>
                         <ProjectsPanel setPageState={setPageState}></ProjectsPanel>
                         <About></About>
-                    </>
-                }
-                {pageState !== 'Home' &&
-                    <>
+                    </Route>
+                    <Route path='/Project'>
                         <ProjectPage pageState={pageState}></ProjectPage>
-                    </>
-                }
-            </main>
-        </div>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 

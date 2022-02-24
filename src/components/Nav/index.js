@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
@@ -6,7 +7,7 @@ const Nav = () => {
             <ul className='header-flex-row'>
 
                 <li className='mx-2'>
-                    <a href="/">Home</a>
+                    <Link to="/Home">Home</Link>
                 </li>
                 <li className='mx-2'>
                     <a href="/">Projects</a>
