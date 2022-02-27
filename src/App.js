@@ -17,7 +17,7 @@ function App() {
             <div className="App">
 
                 <Switch>
-                    <Route path='/Home'>
+                    <Route exact path='/'>
                         <Profile></Profile>
                         <ProjectsPanel setPageState={setPageState}></ProjectsPanel>
                         <About></About>

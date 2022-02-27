@@ -6,7 +6,7 @@ const Nav = () => {
         <header className='header-flex-row'>
 
             <li className='mx-2'>
-                <Link to="/Home">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li className='mx-2'>
                 <a href="/">Projects</a>
