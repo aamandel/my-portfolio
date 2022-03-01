@@ -34,7 +34,7 @@ body {
   color: var(--light);
   font-family: 'Quicksand', sans-serif;
 
-  background: url('./background/triangles.svg') no-repeat center center fixed;
+  background: url('./background/triangles.svg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,7 +224,7 @@ section {
 .link-panel {
   background-color: rgba(255,255,255,0.5);
   width: fit-content;
-  max-width: 100vw;
+  max-width: 80vw;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 1vw;
