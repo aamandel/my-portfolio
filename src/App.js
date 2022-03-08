@@ -6,6 +6,7 @@ import Profile from './components/Profile';
 import ProjectsPanel from './components/ProjectsPanel';
 import About from './components/About';
 import ProjectPage from './components/ProjectPage';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     return (
         <Router>
             <Nav></Nav>
-            <div className="App">
+            <div className="App page-container">
 
                 <Switch>
                     <Route exact path='/'>
@@ -26,7 +27,9 @@ function App() {
                         <ProjectPage pageState={pageState}></ProjectPage>
                     </Route>
                 </Switch>
+                <Footer></Footer>
             </div>
+
         </Router>
     );
 }

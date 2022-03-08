@@ -19,14 +19,14 @@ main {
   --background: #282c34;
   --header-background: #384b59;
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1vw * 0.5);
-  --spacing-two: calc(1vw);
-  --spacing-five: calc(2.5vw);
+  --spacing-one: 0.5vw;
+  --spacing-two: 1vw;
+  --spacing-five: 3vw;
 }
 
 body {
-  
   width: 100%;
+  min-height: 100vh;
   margin: 0;
   font-weight: 500;
   line-height: 1.5;
@@ -34,7 +34,7 @@ body {
   color: var(--light);
   font-family: 'Quicksand', sans-serif;
 
-  background: url('./background/triangles.svg') no-repeat center center scroll;
+  background: url('./background/triangles.svg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,7 +120,8 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  padding: 20px;
+  padding-bottom: 200px;
 }
 
 .profile-row h2 {
@@ -131,6 +132,73 @@ section {
   margin-top: 0;
   font-size: 1.6rem;
   margin-left: var(--spacing-five);
+}
+
+/* footer styling */
+.page-container {
+  position: relative;
+  height: fit-content;
+  min-height: calc(100vh - 195px);
+  padding-bottom: 150px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  
+  width: 100%;
+  text-align: center;
+  
+  font-family: 'Quicksand', sans-serif;
+  font-size: calc(.3rem + 2vmin);
+  font-weight: lighter;
+  text-transform: capitalize;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-svg {
+  width: 40vw;
+  min-width: 300px;
+  height: 150px;
+}
+
+.footer a{
+  color: var(--light);
+  text-decoration: initial;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.cls-1{
+  fill:var(--header-background);
+}
+
+.footer-icon{
+  font-size: 60px;
+}
+
+.footer ul {
+  position: absolute;
+  transform: translateY(60px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-text {
+  fill: white;
 }
 
 /* custom class selectors */
@@ -162,6 +230,7 @@ section {
   box-sizing: border-box;
 
   width: 100vw;
+  height: 50px;
   overflow: auto;
   background-color: var(--header-background);
 
@@ -172,7 +241,7 @@ section {
 
   
   font-family: 'Quicksand', sans-serif;
-  font-size: calc(.3rem + 2vmin);
+  font-size: 1.5rem;
   font-weight: lighter;
   text-transform: capitalize;
 
@@ -190,7 +259,7 @@ section {
 
 .mx-2 {
   margin-top: 0.1rem;
-  margin-right: var(--spacing-two);
+  margin-right: var(--spacing-five);
   margin-left: var(--spacing-five);
   margin-bottom: var(--spacing-one);
 }
@@ -229,11 +298,8 @@ section {
   -webkit-border-radius: 10px;
   border-radius: 1vw;
   padding: 0;
-  padding-top: 0;
-  
-  margin-bottom: 100px;
   margin: 0 auto;
-
+  margin-bottom: 200px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -252,10 +318,11 @@ section {
   cursor: pointer;
 }
 
-.container {
+.about-container {
   width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
 .about-text {
@@ -264,7 +331,6 @@ section {
   width: 45rem;
   font-family: 'Quicksand', sans-serif;
   text-align: left;
-  
 }
 
 .project-text {
@@ -304,6 +370,12 @@ section {
   }
   .home-name {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  .footer a{
+    font-size: 1.4rem;
   }
 }
 
