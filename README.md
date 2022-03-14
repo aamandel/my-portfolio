@@ -2,8 +2,6 @@
 
 This project serves as an online portfolio demonstrating my software development experience
 
-# Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Starting the app in development mode

@@ -19,7 +19,7 @@ const ProjectsPanel = (props) => {
     ];
 
     return (
-        <section>
+        <section id="Projects">
             <LinkPanel
                 categories={projects}
                 setPageState={setPageState}
