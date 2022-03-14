@@ -37,8 +37,8 @@ function App() {
     return (
         <div>
             <Nav></Nav>
+            <div className='bg'></div>
             <div className="App page-container">
-
                 <Switch>
                     <Route exact path='/'>
                         <Profile></Profile>

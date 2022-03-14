@@ -22,28 +22,19 @@ main {
   --spacing-five: 3vw;
 }
 
-html {
-  background: url('./background/triangles.svg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
   overflow-y: scroll; /* Show vertical scrollbar */
   width: 100%;
   height: 100%;
+  position: relative;
   margin: 0;
   font-weight: 500;
-  line-height: 1.5;
   font-size: 1.2rem;
   color: var(--light);
   font-family: 'Quicksand', sans-serif;
 }
 
 /* html tags */
-
 html {
   scroll-behavior: smooth;
 }
@@ -365,6 +356,16 @@ select:-webkit-autofill:focus {
 }
 
 /* other custom class selectors */
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: url('./background/triangles.svg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 .text-column {
   display: flex;
   flex-flow: column wrap;
@@ -447,6 +448,8 @@ select:-webkit-autofill:focus {
   padding: 0;
   text-decoration: initial;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 
   width: 250px;
   height: 250px;
@@ -485,11 +488,21 @@ select:-webkit-autofill:focus {
 
 .img-thumbnail {
   margin: 0;
-  width:250px;
+  width: 250px;
   object-fit: contain;
   opacity: 1;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 375px){
+  .img-thumbnail {
+    width: 230px;
+  }
+  .mx-3 {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 .about-container {
