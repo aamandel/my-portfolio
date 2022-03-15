@@ -17,7 +17,7 @@ const About = () => {
                     <li key='6'>Computer Networking</li>
                 </ul>
                 <p>
-                    My experience earning my B.S. in Computer Science at the University of California, Santa Cruz gave me an excellent technical foundation and I am constantly learning and expanding my skill set. My thirst for knowledge and developing skills combined with the experience I’ve gained from producing numerous projects gives me confidence to approach any new enterprise.
+                    My experience earning my B.S. in Computer Science at the University of California, Santa Cruz gave me an excellent technical foundation and I am constantly learning and expanding my skill set. My thirst for knowledge and the development of my technical skills combined with the experience I’ve gained from producing numerous projects gives me confidence to approach any new enterprise.
                 </p>
             </div>
 
